@@ -11,7 +11,7 @@
     ],
     "require": {
         "php": ">=7.4",
-        "setono/tag-bag": "^1.4",
+        "setono/tag-bag": "dev-fix/composer",
         "symfony/config": "^4.4 || ^5.4 || ^6.0",
         "symfony/dependency-injection": "^4.4 || ^5.4 || ^6.0",
         "symfony/event-dispatcher": "^4.4 || ^5.4 || ^6.0",
@@ -56,5 +56,11 @@
         "check-style": "ecs check src/ tests/",
         "fix-style": "ecs check --fix src/ tests/",
         "phpunit": "phpunit"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Wishibam/tag-bag"
+        }
+    ]
 }
